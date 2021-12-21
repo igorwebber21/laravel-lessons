@@ -1,0 +1,31 @@
+
+
+laravel version 7x
+
+composer create-project --prefer-dist laravel/laravel:^7.0 ./      - установка laravel 7.0
+
+php artisan help make:controller
+php artisan make:controller PageController
+php artisan make:controller Test\TestController
+php artisan make:controller PostController -r
+
+php artisan migrate
+php artisan migrate:rollback
+php artisan make:migration create_posts_table
+php artisan make:migration change_posts_table --table=posts
+php artisan make:migration change_timestamp_posts_table --table=posts
+php artisan make:middleware AdminMiddleware
+
+php artisan vendor:publish --tag=laravel-pagination
+php artisan make:seeder PostSeeder
+
+
+composer require barryvdh/laravel-debugbar --dev
+
+https://github.com/barryvdh/laravel-debugbar
+
+
+
+
+
+
